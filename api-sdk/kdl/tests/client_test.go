@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"kdl/auth"
-	"kdl/client"
-	"kdl/signtype"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/auth"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/client"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/signtype"
 )
 
 var secret_id = ""

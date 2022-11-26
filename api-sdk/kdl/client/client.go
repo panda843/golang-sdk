@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"kdl/endpoint"
-	"kdl/signtype"
-	"kdl/utils"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/endpoint"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/signtype"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/utils"
 )
 
 // GetOrderExpireTime 获取订单过期时间
@@ -31,7 +31,7 @@ func (client Client) GetOrderExpireTime(signType signtype.SignType) (string, err
 	return "", errors.New("KdlError: fail to parse response data: " + fmt.Sprint(res.Data))
 }
 
-//GetProxyAuthorization 获取代理鉴权信息
+// GetProxyAuthorization 获取代理鉴权信息
 // return: 鉴权信息字典
 func (client Client) GetProxyAuthorization(plaintext int, signType signtype.SignType) (map[string]string, error) {
 	ret := make(map[string]string)
@@ -116,7 +116,7 @@ func (client Client) GetIPBalance(signType signtype.SignType) (int, error) {
 	return -1, errors.New("KdlError: fail to parse response data: " + fmt.Sprint(res.Data))
 }
 
-//GetUA 获取User Agent
+// GetUA 获取User Agent
 // return: user agent数组
 func (client Client) GetUA(num int, signType signtype.SignType) ([]string, error) {
 	ep := endpoint.GetUA
@@ -144,7 +144,7 @@ func (client Client) GetUA(num int, signType signtype.SignType) ([]string, error
 	return []string{}, errors.New("KdlError: fail to parse response data: " + fmt.Sprint(res.Data))
 }
 
-//GetAreaCode 获取指定地区编码
+// GetAreaCode 获取指定地区编码
 // return: 地区编码信息字典
 func (client Client) GetAreaCode(area string, signType signtype.SignType) (map[string]string, error) {
 	ret := make(map[string]string)

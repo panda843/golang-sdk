@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"kdl/endpoint"
-	"kdl/signtype"
-	"kdl/utils"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/endpoint"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/signtype"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/utils"
 )
 
 // GetKps 获取独享代理

@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"kdl/endpoint"
-	"kdl/signtype"
-	"kdl/utils"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/endpoint"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/signtype"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/utils"
 )
 
 // getParams 构造请求参数, 返回参数map

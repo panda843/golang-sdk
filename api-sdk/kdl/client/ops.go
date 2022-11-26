@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"kdl/endpoint"
-	"kdl/signtype"
-	"kdl/utils"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/endpoint"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/signtype"
+	"github.com/panda843/golang-sdk/api-sdk/kdl/utils"
 )
 
 // GetProxy 获取开放代理
